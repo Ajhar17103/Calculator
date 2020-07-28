@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--styleSheet-->
+    <link href="Style.css" rel="stylesheet" type="text/css">
+    <!--FontAwsome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <body>
+    <div id="main">
+        <form name='form'>
+            <input  class="outputBox" name='textViews'/>
+        </form>
+      
+        <table>
+            <tr>
+                <td><input type='button' class="button" value='C' style="border-radius: 30%; background-color: red; font-weight: bolder;" onclick="clean()"></td>
+                <td><input type='button' class="button" value='CE' style="border-radius: 30%; background-color: #DAF7A6" onclick="back()"></td>
+                <td><input type='button' class="button" value='&#247;'style="border-radius: 30%; background-color:#817CD1;" onclick="insert('/')"></td>
+                <td><input type='button' class="button" value='&#xd7;' style="border-radius: 30%; background-color: #A6B9F7;" onclick="insert('*')"></td>
+
+            </tr>
+            <tr>
+                <td><input type='button' class="button" value='7' onclick="insert(7)"></td>
+                <td><input type='button' class="button" value='8' onclick="insert(8)"></td>
+                <td><input type='button' class="button" value='9' onclick="insert(9)"></td>
+                <td><input type='button' class="button" value='-'  style="border-radius: 30%; background-color:#B6BFDF ;"   onclick="insert('-')"></td>
+
+            </tr>
+            <tr>
+                <td><input type='button' class="button" value='4' onclick="insert(4)"></td>
+                <td><input type='button' class="button" value='5' onclick="insert(5)"></td>
+                <td><input type='button' class="button" value='6' onclick="insert(6)"></td>
+                <td><input type='button' class="button" value='+' style="border-radius: 30%; background-color:#B6BFDF;" onclick="insert('+')"></td>
+
+            </tr>
+            <tr>
+                <td><input type='button' class="button" value="1" onclick="insert(1)"/></td>
+                <td><input type='button' class="button" value='2' onclick="insert(2)"></td>
+                <td><input type='button' class="button" value='3' onclick="insert(3)"></td>
+                <td rowspan="5"><input type='button' class="button" value='=' style="height: 140px; border-radius: 5%; background-color:#C8C6E4"   onclick="equal()"></td>
+
+            </tr>
+            <tr>
+                <td colspan="2" ><input type='button' class="button" value='0'style='width:150px; border-radius: 5%; background-color:#B6BFDF'onclick="insert(0)"></td>
+                <td><input type='button' class="button" value='.' onclick="insert('.')"></td>
+               
+
+            </tr>
+        </table>
+    </div>  
+    <!--
+    <div>
+          <input class='inputNumber'>
+          <button id="btn">click</button>
+          <p id="demo"></p>
+      </div>
+      --->
+
+   <script src='App.js'></script>
+  </body>
+</html>

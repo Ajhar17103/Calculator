@@ -1,0 +1,42 @@
+body{
+    background: url(../img/aa.jpg);
+}
+#main{
+    
+     
+    margin:0px;
+    width: 342px;
+    margin: 200px 0px 0px 700px;
+    border: solid black;
+    padding: 20px;
+    background-color: #3B3957;
+   
+    
+}
+ .button{
+     height: 70px;
+     width: 73px;
+     border: none;
+     font-size: 25px;
+     font-weight: bold;
+     border-radius: 10%;
+     background-color: #B5B4C8 ;
+     cursor: pointer;
+ }
+ .button:hover{
+     background-color: white;
+     color: black;
+ }
+ .outputBox{
+     height: 100px;
+     width:300px;
+     font-size: 50px;
+     border-color: black;
+     background-color: #E3E2F1;
+     
+ }
+ form{
+     padding: 10px 0;
+ }
+ 
+  
